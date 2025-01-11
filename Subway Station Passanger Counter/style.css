@@ -38,12 +38,21 @@ h2 {
     font-size: 3rem;
 }
 
+
+.control-Btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
 button {
     padding: 6px;
     font-size: 20px;
     margin-top: 20px;
     border: transparent;
-    background-color: rgb(2, 2, 17);
+    background-color: #0e0e13;
     margin-bottom: 10px;
     color: #fff;
     border-radius: 5px;
@@ -54,6 +63,29 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #857878;
+    background-color: #d1d3dd;
     color: #161313;
+}
+
+.total {
+    margin: 10px 0;
+    width: 90%;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.total h3 {
+    font-size: 2rem;
+}
+
+#totalReset {
+    margin: 0;
+    padding: 6px;
+    font-size: 12px;
+    border: transparent;
 }
