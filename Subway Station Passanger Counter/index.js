@@ -30,6 +30,8 @@ document.getElementById("increaseBtn").onclick = function () {
 
 //function for the total reset button
 document.getElementById("totalReset").onclick = function () {
+    window.alert(`The Total Number of Passengers at The Train Station Today is ${total}`)
+
     count = 0
     total = count;
 
