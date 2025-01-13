@@ -1,5 +1,6 @@
 let count = 0;
 let total = 0;
+let finalCount = 0;
 
 //function for the decrease button
 document.getElementById("decreaseBtn").onclick = function () {
@@ -11,12 +12,13 @@ document.getElementById("decreaseBtn").onclick = function () {
 
 //function for the reset button
 document.getElementById("resetBtn").onclick = function () {
-    total = total + count;
+    finalCount = total + count;
     count = 0;
+    total = finalCount
 
 
     document.getElementById("counter").innerHTML = count
-    document.getElementById("totalPass").innerHTML = total
+    document.getElementById("totalPass").innerHTML = finalCount
 }
 
 
@@ -30,10 +32,16 @@ document.getElementById("increaseBtn").onclick = function () {
 
 //function for the total reset button
 document.getElementById("totalReset").onclick = function () {
-    window.alert(`The Total Number of Passengers at The Train Station Today is ${total}`)
 
+
+    if (total = 0) {
+        window.alert(`There are no Passengers Today`);
+    } else {
+        window.alert(`The Total Number of Passengers at The Train Station Today is ${total}`)
+    }
+    
+
+    document.getElementById("totalPass").innerHTML = finalCount
+    total = 0
     count = 0
-    total = count;
-
-    document.getElementById("totalPass").innerHTML = total
 }
